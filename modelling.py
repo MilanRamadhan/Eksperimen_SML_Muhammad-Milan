@@ -23,11 +23,14 @@ X_train, X_test, y_train, y_test = train_test_split(
 # autolog
 mlflow.sklearn.autolog()
 
-with mlflow.start_run():
-    model = RandomForestClassifier()
-    model.fit(X_train, y_train)
+# 🚨 HAPUS start_run()
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
 
-    y_pred = model.predict(X_test)
-    acc = accuracy_score(y_test, y_pred)
+y_pred = model.predict(X_test)
+acc = accuracy_score(y_test, y_pred)
 
-    print("Accuracy:", acc)
+# log manual metric (optional, karena autolog sudah handle)
+mlflow.log_metric("accuracy_manual", acc)
+
+print("Accuracy:", acc)

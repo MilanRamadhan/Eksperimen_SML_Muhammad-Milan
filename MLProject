@@ -1,0 +1,9 @@
+name: Titanic Project
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_path: {type: str, default: dataset_clean.csv}
+    command: "python modelling.py"

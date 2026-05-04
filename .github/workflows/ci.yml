@@ -24,7 +24,7 @@ jobs:
 
       - name: Run MLflow Project
         run: |
-          mlflow run .
+          mlflow run . --env-manager=local
 
       - name: Done
         run: echo "CI selesai"

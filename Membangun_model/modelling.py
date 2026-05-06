@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score
 mlflow.set_experiment("Titanic Model")
 
 # load data
-df = pd.read_csv("dataset_clean.csv")
+df = pd.read_csv("dataset/dataset_clean.csv")
 
 X = df.drop("survived", axis=1)
 y = df["survived"]

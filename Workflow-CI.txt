@@ -1,0 +1,12 @@
+GitHub Actions Workflow CI
+
+Workflow digunakan untuk melakukan automation checking pada project machine learning.
+
+Lokasi workflow:
+.github/workflows/ci.yml
+
+Repository:
+https://github.com/MilanRamadhan/Eksperimen_SML_Muhammad-Milan
+
+GitHub Actions:
+https://github.com/MilanRamadhan/Eksperimen_SML_Muhammad-Milan/actions
